@@ -9,12 +9,12 @@ markdown: rdiscount
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Qiao Gao
+title : Jekyll Bootstrap
 tagline: Site Tagline
 author :
-  name : Qiao Gao
-  email : gqplus2@gmail.com
-  github : qiaogao
+  name : Name Lastname
+  email : blah@email.test
+  github : username
   twitter : username
   feedburner : feedname
 

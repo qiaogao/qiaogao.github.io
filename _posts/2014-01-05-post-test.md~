@@ -1,8 +1,14 @@
 ---
 layout: post
 title: "Post Test"
-description: ""
-category: 
-tags: []
+description: "Post Test"
+category: Test
+tagline: "Test"
+tags : [test]
 ---
 {% include JB/setup %}
+
+##Second title
+###Third Title
+This is the test of my first post.
+
