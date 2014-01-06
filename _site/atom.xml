@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Jekyll Bootstrap</title>
+ <title>GQ.net</title>
  <link href="http://username.github.io/" rel="self"/>
  <link href="http://username.github.io"/>
- <updated>2014-01-04T17:41:40-06:00</updated>
+ <updated>2014-01-06T05:33:38-06:00</updated>
  <id>http://username.github.io</id>
  <author>
-   <name>Name Lastname</name>
-   <email>blah@email.test</email>
+   <name>Qiao Gao</name>
+   <email>gqplus2@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>中文标题测试</title>
+   <link href="http://username.github.io/test/2014/01/05/post-test"/>
+   <updated>2014-01-05T00:00:00-06:00</updated>
+   <id>http://username.github.io/test/2014/01/05/post-test</id>
+   <content type="html">&lt;h2 id=&quot;&quot;&gt;标题二&lt;/h2&gt;
+
+&lt;h3 id=&quot;_2&quot;&gt;标题三&lt;/h3&gt;
+
+&lt;p&gt;这是中文及修改测试&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Jekyll Introduction</title>

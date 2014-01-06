@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>Jekyll Bootstrap</title>
-        <description>Jekyll Bootstrap - Name Lastname</description>
+        <title>GQ.net</title>
+        <description>GQ.net - Qiao Gao</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2014-01-04T17:41:40-06:00</lastBuildDate>
-        <pubDate>2014-01-04T17:41:40-06:00</pubDate>
+        <lastBuildDate>2014-01-06T05:33:38-06:00</lastBuildDate>
+        <pubDate>2014-01-06T05:33:38-06:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>中文标题测试</title>
+                <description>&lt;h2 id=&quot;&quot;&gt;标题二&lt;/h2&gt;
+
+&lt;h3 id=&quot;_2&quot;&gt;标题三&lt;/h3&gt;
+
+&lt;p&gt;这是中文及修改测试&lt;/p&gt;</description>
+                <link>http://username.github.io/test/2014/01/05/post-test</link>
+                <guid>http://username.github.io/test/2014/01/05/post-test</guid>
+                <pubDate>2014-01-05T00:00:00-06:00</pubDate>
+        </item>
 
         <item>
                 <title>Jekyll Introduction</title>
