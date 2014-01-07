@@ -1,8 +1,8 @@
-title:            Site Title
+title:            GQ.net
 description:      Describe your website here.
-disqus_shortname: 
+disqus_shortname: qiaogaonet
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://www.qiaogao.com
+url:              http://www.qiaogao.net
 
 # Owner/author information
 owner:
