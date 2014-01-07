@@ -1,4 +1,4 @@
-title:            GQ.net
+title:            QiaoGao's blog
 description:      Describe your website here.
 disqus_shortname: qiaogaonet
 #Your site's domain goes here. Leave localhost server or blank when working locally.
@@ -8,7 +8,7 @@ url:              http://www.qiaogao.net
 owner:
   name:           Qiao Gao
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            "Hi, welcome to my blog. As a graduate student on electrical engineering, I feel interested in any new techniques and some other fascinating stuffs. Please be free to communicate with me."
   email:          gqplus2@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
