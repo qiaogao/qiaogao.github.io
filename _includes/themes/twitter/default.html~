@@ -53,16 +53,18 @@
     <div class="header-title">
       <div class="header-title-wrap">
         <h1>{{ page.title }}</h1>
-        <h2>{{ tagline.title }}</h2>
+        <h2>{{ page.tagline }}</h2>
       </div><!-- /.header-title-wrap -->
     </div><!-- /.header-title -->
   </div>
     <div class="container-narrow">
+      <div class="page-container">
       <div class="radius_border">
       <div class="content">
         {{ content }}
       </div>
       <hr>
+      </div>
       </div>
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
