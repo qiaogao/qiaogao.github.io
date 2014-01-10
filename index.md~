@@ -1,7 +1,7 @@
 ---
 layout: page
-title: GQ.net
-tagline: Feel the revolution of technique!
+title: Hello World!
+tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
