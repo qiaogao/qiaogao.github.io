@@ -1,7 +1,7 @@
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
-  width: 1000px; 
+  width: 960px; 
 }
 
 .container-narrow > hr {
@@ -9,6 +9,16 @@
 
 .radius_border>.content{
   margin: 30px 30px 30px 30px;
+}
+
+.navbar-fixed{
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  z-index:1030;
+  margin-bottom:0;
+min-width:1020px;
 }
 
 .imgbox{
@@ -21,7 +31,7 @@
   overflow: hidden;
   width: 100%;
   max-height:270px;
-  min-width:1000px;
+  min-width:1020px;
 }
 
 body{
@@ -38,7 +48,7 @@ body{
 
 .radius_border{
   background-color: #ffffff;
-  margin:30px auto;
+  margin:30px 30px 30px 0;
   border:1px solid;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
