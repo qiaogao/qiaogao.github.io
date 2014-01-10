@@ -34,7 +34,7 @@
 
   <body>
      <div class="navbar">
-       <div class="navbar-fixed-top">
+       <div class="navbar-fixed">
       <div class="navbar-inner">
         <div class="container-narrow">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
@@ -48,7 +48,8 @@
      </div>
   </div>
     
-  <div class="imgbox">
+  <div class="container-narrow"> 
+   <div class="imgbox">
       <img src="{{ BASE_PATH }}/images/background.jpg">
     <div class="header-title">
       <div class="header-title-wrap">
@@ -57,7 +58,7 @@
       </div><!-- /.header-title-wrap -->
     </div><!-- /.header-title -->
   </div>
-    <div class="container-narrow">
+   
       <div class="page-container">
       <div class="radius_border">
       <div class="content">
