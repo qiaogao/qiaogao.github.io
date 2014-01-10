@@ -11,15 +11,6 @@
   margin: 30px 30px 30px 30px;
 }
 
-.navbar-fixed{
-  position:absolute;
-  top:0;
-  right:0;
-  left:0;
-  z-index:1030;
-  margin-bottom:0;
-}
-
 .imgbox{
   position:absolute;
   left:0;top:0;
