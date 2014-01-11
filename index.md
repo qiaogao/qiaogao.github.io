@@ -1,6 +1,6 @@
 ---
-layout: page
-title: GQ.net
+layout: default
+title: QiaoGao's Blog
 tagline: Feel the revolution of technique!
 ---
 {% include JB/setup %}
