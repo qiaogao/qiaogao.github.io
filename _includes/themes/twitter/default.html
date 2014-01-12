@@ -49,7 +49,6 @@
      </div>
   </div>
     
-  <div class="container-narrow">
    <div class="imgbox">
       <img src="{{ BASE_PATH }}/images/background.jpg">
     <div class="header-title">
@@ -60,14 +59,13 @@
     </div><!-- /.header-title -->
   </div>
    
+     
       <div class="page-container">
-      <div class="radius_border">
-      <div class="content">
-        {{ content }}
+	  <div class="container-narrow">
+	       {{ content }}
       </div>
-      <hr>
-      </div>
-      </div>
+	  </div>
+	 <div class="container-narrow">  
       <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
