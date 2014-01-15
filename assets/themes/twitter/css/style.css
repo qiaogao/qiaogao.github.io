@@ -13,7 +13,7 @@
 .sidebar-right{
   margin: 0 0;
   width: 280px;
-  float: right;  
+  float: left;  
 }
 
 .label-box{
@@ -75,7 +75,7 @@ body{
   width: 100%
 }
 
-.content-box{
+.contain-box{
   padding:10px 10px 10px 10px;
 }
 .radius_border{
