@@ -67,7 +67,7 @@ body{
 }
 
 .page-container{
-  margin: 280px 0 0 0; 
+  margin: 290px 0 0 0; 
   width: 100%;
 }
 
@@ -82,7 +82,7 @@ body{
   overflow: hidden;
   background-color: #ffffff;
   padding:0 0 0 0;
-  margin:10px 10px 20px 10px;
+  margin:0 10px 20px 10px;
   border:1px solid;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;

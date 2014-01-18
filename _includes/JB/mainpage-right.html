@@ -26,12 +26,11 @@
 	   </div>
 	   <div class="contain-box">
 	     <ul class="posts">
-		     {% for category in site.categories %} 
-               {% if {{category[0]}} == 'test' %}
-                 {% assign pages_list = category[1] %}  
-                 {% include JB/pages_list %}
-               {% endif %}
-             {% endfor %}
+		   {% for post in site.posts %}
+		    {% if post.group == 'tests' %}
+               <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+		  {% endfor %}
          </ul>
         </div>
     </div>

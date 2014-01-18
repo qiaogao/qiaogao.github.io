@@ -4,6 +4,7 @@ category : lessons
 postphoto: "default"
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
+group: posts
 ---
 {% include JB/setup %}
 
