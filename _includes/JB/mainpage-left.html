@@ -1,0 +1,39 @@
+<div class="sidebar-left">
+ <div class="radius_border">
+   <div class="content">
+     <div class="label-box">
+       <div class="contain-box">
+	       <p><strong>WELCOME</strong></p>
+       </div>	 
+	 </div>
+	 <div class="contain-box">
+        <p>Greeting and welcome to my blog!</p>
+		<p></p>
+		<p>In this website you will see: some of my recent works, tutorials of some tricky missions, reviews of some electrical products I own, comments about latest trend of technology and feelings about music, game or any other stuff that interests me. I will share my ideas without any hesitation and hope they could be helpful for you. So do not be hesitate to leave a comment under any post if it do make sense. Your small "Thank you" is a great support for me!</p>
+        <p></p>
+		<p>Please make yourself at home, enjoy yourself and have fun!</p>
+		<p></p>
+		<p>See you soon.</p>
+	 </div>  
+   </div>
+  </div>
+  <div class="radius_border">
+    <div class="content">
+	   <div class="label-box">
+       <div class="contain-box">
+	       <p><strong>LATEST POSTS</strong></p>
+       </div>	 
+	 </div>
+	 <div class="contain-box">
+        <ul class="posts">
+         {% for post in site.posts %}
+		   {% if post.group == 'posts' %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+           {% endif %}
+		 {% endfor %}
+        </ul>
+	 </div>
+    </div>
+   </div>
+ </div>
+ 

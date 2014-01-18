@@ -13,7 +13,7 @@
 .sidebar-right{
   margin: 0 0;
   width: 280px;
-  float: left;  
+  float: right;  
 }
 
 .label-box{
@@ -67,7 +67,7 @@ body{
 }
 
 .page-container{
-  margin: 290px 0 0 0; 
+  margin: 280px 0 0 0; 
   width: 100%;
 }
 
@@ -75,14 +75,14 @@ body{
   width: 100%
 }
 
-.contain-box{
+.content-box{
   padding:10px 10px 10px 10px;
 }
 .radius_border{
   overflow: hidden;
   background-color: #ffffff;
   padding:0 0 0 0;
-  margin:0 10px 20px 10px;
+  margin:10px 10px 20px 10px;
   border:1px solid;
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
@@ -109,7 +109,7 @@ body{
 .header-title .header-title-wrap{display:table-cell;margin:0 auto;text-align:center;vertical-align:middle}
 .header-title h1{font-weight:700;margin:10px 60px;font-size:48px;font-size:3rem;color:#fff;text-shadow:1px 1px 4px rgba(34,34,34,0.6)}
 .header-title h1 a{color:#fff}
-.header-title h2{margin:0;font-size:24px;font-size:1.5rem;text-transform:uppercase;color:#fff;text-shadow:1px 1px 4px rgba(34,34,34,0.6)}
+.header-title h2{margin:0;font-size:16px;font-size:1rem;text-transform:uppercase;color:#fff;text-shadow:1px 1px 4px rgba(34,34,34,0.6)}
 .header-title h2 a{color:#fff}
 
 /* posts index */

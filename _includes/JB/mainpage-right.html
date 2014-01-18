@@ -1,0 +1,38 @@
+<div class="sidebar-right">
+  <div class="radius_border">
+    <div class="content">
+	   <div class="label-box">
+       <div class="contain-box">
+	       <p><strong>ABOUT THE AUTHOR</strong></p>
+       </div>	 
+	 </div>
+	 <div class="contain-box">
+	  <div class="profile-box">
+        <img src="{{ BASE_PATH }}/images/avatar.jpg">
+	  </div>
+        <p>Hi everyone,</p>
+		<p></p>
+		<p>My name is Qiao Gao. Currently I am a graduate student in Illinois Institute of Technology. My major is electrical engineering with studies focused on microelectronics domain.</p>
+        <p><a href="">Learn more about me...</a></p>
+	 </div>
+    </div>
+   </div>
+   <div class="radius_border">
+    <div class="content">
+	   <div class="label-box">
+        <div class="contain-box">
+	       <p><strong>LATEST WORK</strong></p>
+        </div>	 
+	   </div>
+	   <div class="contain-box">
+	     <ul class="posts">
+		   {% for post in site.posts %}
+		    {% if post.group == 'tests' %}
+               <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
+		  {% endfor %}
+         </ul>
+        </div>
+    </div>
+   </div>
+ </div>
