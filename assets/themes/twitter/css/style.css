@@ -13,7 +13,13 @@
 .sidebar-right{
   margin: 0 0;
   width: 280px;
-  float: left;  
+  float: right;  
+}
+
+footer{
+  text-align:center;
+  float:right;
+  width: 100%;
 }
 
 .label-box{
@@ -52,7 +58,28 @@ min-width:1020px;
   min-width:1020px;
 }
 
+.iconbox{
+  overflow: hidden;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  float:left;
+  margin: 5px 0 5px 0;
+  height: 30px;
+  width: 30px
+}
+
+.iconbox:hover{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 .profile-box{
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
   float:right;
   border:1px solid;
   -webkit-box-shadow:1px 1px 10px;
@@ -73,6 +100,10 @@ body{
 
 .imgbox img{
   width: 100%
+}
+
+.iconbox img{
+  height: 100%
 }
 
 .contain-box{
