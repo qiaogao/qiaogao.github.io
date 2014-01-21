@@ -5,7 +5,7 @@ description: ""
 postphoto: "default"
 category: test
 tags: [test]
-group: tests
+group: posts
 ---
 {% include JB/setup %}
 

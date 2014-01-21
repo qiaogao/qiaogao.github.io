@@ -1,8 +1,32 @@
 ---
-layout: page
-title: "MY POSTS"
+layout: page-sidebar
+title: "POSTS"
+tagline: "Feeling//Attitude//Tutorial"
 description: ""
 postphoto: "default"
 group: navigation
 ---
 {% include JB/setup %}
+
+<ul class="tag_box inline">
+  {% assign categories_list = site.categories %}
+  {% assign group = 'posts' %}
+  {% include JB/categories_list %}
+</ul>
+
+{% assign group = 'posts' %}
+{% for category in site.categories %} 
+ {% for node in category[1] %}
+	 {% if group == null or group == node.group %}
+     <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+     <ul>
+	  {% assign group = nil %}
+      {% assign pages_list = category[1] %}  
+      {% include JB/pages_list %}
+     </ul>
+	 {% assign group = 'posts' %}
+	 {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign group = nil %}

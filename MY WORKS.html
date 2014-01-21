@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "MY WORKS"
+title: "WORKS"
+tagline: "Project//Research//Practice"
 description: ""
 postphoto: "default"
 group: navigation
@@ -14,11 +15,19 @@ group: navigation
   {% include JB/tags_list %}
 </ul>
 
-
+{% assign group = 'works' %}
 {% for tag in site.tags %} 
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-  <ul>
-    {% assign pages_list = tag[1] %}  
-    {% include JB/pages_list %}
-  </ul>
+  {% for node in tag[1] %}
+	 {% if group == null or group == node.group %}
+      <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+      <ul>
+	    {% assign group = nil %}
+        {% assign pages_list = tag[1] %}  
+        {% include JB/pages_list %}
+      </ul>
+	  {% assign group = 'works' %}
+	  {% break %}
+     {% endif %}
+  {% endfor %}
 {% endfor %}
+{% assign group = nil %}

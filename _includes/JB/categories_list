@@ -28,10 +28,16 @@ Usage:
     {% endfor %}
   {% else %}
     {% for category in categories_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
+	 {% for node in category[1] %}
+	  {% if group == null or group == node.group %}
+    	<li><a href="#{{ category[0] }}-ref">
     		{{ category[0] | join: "/" }} <span>{{ category[1].size }}</span>
     	</a></li>
+		{% break %}
+	  {% endif %}
+	 {% endfor %}
     {% endfor %}
   {% endif %}
 {% endif %}
 {% assign categories_list = nil %}
+{% assign group = nil %}
