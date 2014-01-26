@@ -35,16 +35,20 @@
   <body>
      
     <div class="navbar">
-       <div class="navbar-fixed">
-      <div class="navbar-inner">
+      <div class="headbar-inner">
         <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-		  <div class="iconbox">
+		  <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+		  <p class="tagline">{{site.tagline}}</p>
+		  <!--<div class="iconbox">
 		  <a href="{{ HOME_PATH }}"><img src="{{ BASE_PATH }}/images/flag_usa.png"></a>
 		  </div>
 		  <div class="iconbox">
 		  <a href="{{ HOME_PATH }}"><img src="{{ BASE_PATH }}/images/flag_china.png"></a>
-		  </div>
+		  </div>-->
+        </div>
+      </div>
+	  <div class="navbar-inner">
+        <div class="container-narrow">
           <ul class="nav">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
@@ -55,19 +59,18 @@
           </ul>
         </div>
       </div>
-     </div>
-  </div>
+   </div>
     
-   <div class="imgbox">
-      <img src="{{ BASE_PATH }}/images/{{page.postphoto}}.jpg">
-	<div class="container-narrow">
-    <div class="header-title">
+   <div class="container-narrow">
+    <div class="imgbox">
+       <img src="{{ BASE_PATH }}/images/{{page.postphoto}}.jpg">
+	<div class="header-title">
       <div class="header-title-wrap">
         <h1>{{ page.title }}</h1>
         <h2>{{ page.tagline }}</h2>
-      </div><!-- /.header-title-wrap -->
-    </div><!-- /.header-title -->
-	</div>
+      </div>
+    </div>
+   </div>
   </div>
    
      
