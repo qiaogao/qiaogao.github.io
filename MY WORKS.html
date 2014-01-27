@@ -10,24 +10,24 @@ group: navigation
 
 
 <ul class="tag_box inline">
-  {% assign tags_list = site.tags %}  
+  {% assign categories_list = site.categories %}
   {% assign group = 'works' %}
-  {% include JB/tags_list %}
+  {% include JB/categories_list %}
 </ul>
 
 {% assign group = 'works' %}
-{% for tag in site.tags %} 
-  {% for node in tag[1] %}
+{% for category in site.categories %} 
+ {% for node in category[1] %}
 	 {% if group == null or group == node.group %}
-      <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-      <ul>
-	    {% assign group = nil %}
-        {% assign pages_list = tag[1] %}  
-        {% include JB/pages_list %}
-      </ul>
-	  {% assign group = 'works' %}
-	  {% break %}
-     {% endif %}
+     <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+     <ul>
+	  {% assign group = nil %}
+      {% assign pages_list = category[1] %}  
+      {% include JB/pages_list %}
+     </ul>
+	 {% assign group = 'works' %}
+	 {% break %}
+    {% endif %}
   {% endfor %}
 {% endfor %}
 {% assign group = nil %}

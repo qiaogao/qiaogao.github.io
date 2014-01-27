@@ -67,13 +67,23 @@ iconbox{
   background-color: #4B525F;
   overflow: hidden;
   float:left;
-  margin: 0 0 0 5px;
+  margin: 0 0 20px 5px;
   min-height: 40px;
   width: 40px;
 }
 
-.nav iconbox{
+.navbar-inner iconbox{
+  float:right;
   margin: 0 0 0 5px;
+}
+
+header-icon{
+  margin-top:25px;
+  float:right;
+}
+
+iconbox > img{
+  height: 100%
 }
 
 iconbox.rss:hover{
@@ -92,24 +102,32 @@ iconbox.renren:hover{
  background-color: #34679e;
 }
 
-.nav  iconbox{
-  float:right;
+iconbox.twitter:hover{
+ background-color: #00b0ef;
+}
+
+iconbox.github:hover{
+ background-color: #0084c5;
+}
+
+iconbox.weibo:hover{
+ background-color: #ff0026;
 }
 
 .profile-box{
-  margin:0 20px 0 5px;
+  margin:20px 20px 5px 5px;
   -webkit-border-radius:53px;
   -moz-border-radius:53px;
   border-radius:53px;
   float:right;
   border:1px solid;
   overflow: hidden;
-  width:105px;
+  width:106px;
 }
 
 .name-box{
   text-align:right;
-  margin:50px 5px 0 20px;
+  margin:70px 5px 37.5px 20px;
   float:left;
   overflow: hidden;
   width:105px;
@@ -136,12 +154,7 @@ body{
   width: 100%
 }
 
-.iconbox img{
-  height: 100%
-}
-
 .contain-box{
-  float: left;
   padding:20px 20px 20px 20px;
 }
 .label-box > .contain-box{
@@ -155,7 +168,7 @@ body{
 }
 
 .navbar .nav {
-  float: right; }
+  float: left; }
 
 .header-title{padding:0 0;text-align:center;position:absolute;top:0;left:0;display:table;width:100%;height:270px;margin-top:0;overflow:hidden;}
 .header-title .header-title-wrap{display:table-cell;margin:0 auto;text-align:center;vertical-align:middle;}

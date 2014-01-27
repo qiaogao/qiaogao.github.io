@@ -39,6 +39,26 @@
         <div class="container-narrow">
 		  <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 		  <p class="tagline">{{site.tagline}}</p>
+		  <header-icon>
+		   <iconbox class="facebook">
+		    <a href="https://www.facebook.com/joe.gao.754" target="_blank" title="Facebook"><img src="{{ BASE_PATH }}/images/facebook-48.png"></a>
+		   </iconbox>
+		   <iconbox class="renren">
+		    <a href="http://www.renren.com/250542730/profile" target="_blank" title="Renren"><img src="{{ BASE_PATH }}/images/renren.png"></a>
+		   </iconbox>
+		   <iconbox class="weibo">
+		    <a href="http://weibo.com/u/1887411752" target="_blank" title="Weibo"><img src="{{ BASE_PATH }}/images/sinaweibo-48.png"></a>
+		   </iconbox>
+		   <iconbox class="twitter">
+		    <a href="https://twitter.com/gqplus2" target="_blank" title="Twitter"><img src="{{ BASE_PATH }}/images/twitter-48.png"></a>
+		   </iconbox>
+		   <iconbox class="github">
+		    <a href="https://github.com/qiaogao/qiaogao.github.io" target="_blank" title="Github"><img src="{{ BASE_PATH }}/images/github-48.png"></a>
+		   </iconbox>
+		   <iconbox class="rss">
+		    <a href="{{ BASE_PATH }}{{site.JB.rss_path}}"><img src="{{ BASE_PATH }}/images/rss-48.png"></a>
+		   </iconbox>
+		  </header-icon>
 		  <!--<div class="iconbox">
 		  <a href="{{ HOME_PATH }}"><img src="{{ BASE_PATH }}/images/flag_usa.png"></a>
 		  </div>
@@ -49,19 +69,16 @@
       </div>
 	  <div class="navbar-inner">
         <div class="container-narrow">
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
+		  <ul class="nav">
+		    {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
-			<iconbox class="rss">
-		    <a href="{{ BASE_PATH }}{{site.JB.rss_path}}"><img src="{{ BASE_PATH }}/images/rss-48.png"></a>
-		    </iconbox>
-          </ul>
+		  </ul>
         </div>
       </div>
    </div>
     
-   <div class="container-narrow">
+ <!--  <div class="container-narrow">
     <div class="imgbox">
        <img src="{{ BASE_PATH }}/images/{{page.postphoto}}.jpg">
 	<div class="header-title">
@@ -71,7 +88,7 @@
       </div>
     </div>
    </div>
-  </div>
+  </div>-->
    
      
       <div class="page-container">
