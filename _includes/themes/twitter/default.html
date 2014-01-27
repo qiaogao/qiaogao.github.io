@@ -40,6 +40,9 @@
 		  <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 		  <p class="tagline">{{site.tagline}}</p>
 		  <header-icon>
+		   <iconbox class="email">
+		    <a href="mailto:gqplus2@gmail.com" title="Email"><img src="{{ BASE_PATH }}/images/email-48.png"></a>
+		   </iconbox>
 		   <iconbox class="facebook">
 		    <a href="https://www.facebook.com/joe.gao.754" target="_blank" title="Facebook"><img src="{{ BASE_PATH }}/images/facebook-48.png"></a>
 		   </iconbox>
@@ -70,6 +73,7 @@
 	  <div class="navbar-inner">
         <div class="container-narrow">
 		  <ul class="nav">
+		    <li><a href="{{BASE.PATH}}">HOME</a></li>
 		    {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
@@ -77,31 +81,31 @@
         </div>
       </div>
    </div>
-    
- <!--  <div class="container-narrow">
-    <div class="imgbox">
-       <img src="{{ BASE_PATH }}/images/{{page.postphoto}}.jpg">
-	<div class="header-title">
+   
+   <div class="container-narrow">
+   <div class="imgbox">
+      <img src="{{ BASE_PATH }}/images/{{page.postphoto}}.jpg">
+	 <div class="header-title">
       <div class="header-title-wrap">
         <h1>{{ page.title }}</h1>
         <h2>{{ page.tagline }}</h2>
       </div>
-    </div>
+     </div>
+	</div>
    </div>
-  </div>-->
-   
+    
      
       <div class="page-container">
-	  <div class="container-narrow">
+	   <div class="container-narrow">
 	       {{ content }}
-      </div>
+       </div>
 	  </div>
 	  <footer>
-        <h6>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</h6>
+	    <h6>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</h6>
         <h6>Developed with help from <a href="https://github.com/" target="_blank">GitHub</a>
           and <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
         </h6>
-      </footer>
+	  </footer>
     
 
     {% include JB/analytics %}
