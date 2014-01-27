@@ -14,7 +14,7 @@
   float: left;  
 }
 
-.headbar-inner{min-height:80px;padding-left:20px;padding-right:20px;background-color:#1F2126;}.navbar-inner:before,.navbar-inner:after{display:table;content:"";line-height:0;}
+.headbar-inner{min-height:80px;padding-left:0;padding-right:0;background-color:#1F2126;}.navbar-inner:before,.navbar-inner:after{display:table;content:"";line-height:0;}
 
 .sidebar-right{
   margin: 0 0 0 10px;

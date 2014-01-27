@@ -35,9 +35,9 @@
   <body>
      
     <div class="navbar">
-      <div class="headbar-inner">
-        <div class="container-narrow">
-		  <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+	   <div class="headbar-inner">
+	    <div class="container-narrow">
+          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 		  <p class="tagline">{{site.tagline}}</p>
 		  <header-icon>
 		   <iconbox class="email">
@@ -68,18 +68,18 @@
 		  <div class="iconbox">
 		  <a href="{{ HOME_PATH }}"><img src="{{ BASE_PATH }}/images/flag_china.png"></a>
 		  </div>-->
-        </div>
+		 </div>
       </div>
 	  <div class="navbar-inner">
-        <div class="container-narrow">
-		  <ul class="nav">
+	     <div class="container-narrow">
+          <ul class="nav">
 		    <li><a href="{{HOME.PATH}}">HOME</a></li>
 		    {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
 		  </ul>
         </div>
-      </div>
+	 </div>
    </div>
    
    <div class="container-narrow">
