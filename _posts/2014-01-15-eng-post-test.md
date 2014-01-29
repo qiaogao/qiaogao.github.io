@@ -2,7 +2,7 @@
 layout: post
 title: "Engish post test"
 description: ""
-postphoto: "default"
+postphoto: "english"
 category: test
 tags: [test]
 group: posts

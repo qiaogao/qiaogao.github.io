@@ -13,22 +13,23 @@
 	 </div>  
    </div>
   </div>-->
-<div class="radius_border">
-    <div class="content">
-	   <div class="label-box">
-       <div class="contain-box">
-	       <p><strong>LATEST POSTS</strong></p>
-       </div>	 
-	 </div>
-	 <div class="contain-box">
-        <ul class="posts">
-         {% for post in site.posts %}
-		   {% if post.group != 'works' %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-           {% endif %}
-		 {% endfor %}
-        </ul>
-	 </div>
-    </div>
- </div>
- 
+<div>
+{% for post in site.posts %}
+	{% if post.group != 'works' %}
+    <div class="radius_border">
+        <div class="post-nav">
+		    <a href="{{ BASE_PATH }}{{ post.url }}">
+			    <div class="post-imgbox">
+				    <img src="{{ BASE_PATH }}/images/{{post.postphoto}}.jpg">
+				    <div class="category-tag"><p>{{post.category}}</p></div>
+		        </div>
+			</a>
+			<div class="post-titletag">
+			    <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+				<p>Posted on {{ post.date | date_to_string }}</p>
+			</div>
+		</div>
+	</div>
+    {% endif %}
+{% endfor %}
+</div>
