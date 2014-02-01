@@ -27,13 +27,22 @@
         </div>	 
 	   </div>
 	   <div class="contain-box">
-	     <ul class="posts">
-		   {% for post in site.posts %}
-		    {% if post.group == 'works' %}
-               <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endif %}
-		  {% endfor %}
-         </ul>
+{% for post in site.posts %}
+	{% if post.group == 'works' %}
+        <div class="work-nav">
+		    <a href="{{ BASE_PATH }}{{ post.url }}">
+			    <div class="work-imgbox">
+				    <div class="content">
+                    <h6>{{post.category}}</h6>
+					</div>
+		        </div>
+			</a>
+			<div class="work-titletag">
+			    <h6><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h6>
+			</div>
+		</div>
+    {% endif %}
+{% endfor %}
         </div>
     </div>
    </div>
