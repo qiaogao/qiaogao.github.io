@@ -26,29 +26,29 @@ Jekyll: 这是一个开源的博客发布平台，通过这个平台，我们不
 ###2.域名申请
 这里使用Godaddy网站作为例子，其他域名申请网站都大同小异。这里需要明确，用户与域名的租赁关系并不依赖域名网站，因此你完全可以把域名挂靠在其他网站管理。好了，直接进入Godaddy的主页（<https://www.godaddy.com>），如图：
 
-![godaddy_png]({{ BASE.PATH }}/images/jekyll_1.png)
+![godaddy_png]({{ BASE.PATH }}/images/jekyll/jekyll_1.png)
 
 不用管上图以外的其他部分，那些是godaddy的“广告”。这里我们只需要域名。像在电商买东西一样，先注册一个账号，然后直接在搜索栏输入想要的域名，所有可用的域名会被列出。选中想要的域名加入购物车，然后选择租赁时长，付款，总之跟着网站的提示一步一步来就好。拿到域名之后，最重要的一步就是把域名和我们的Github连接起来。
 ###3.域名连接
 首先戳这个（<https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages>）。这里有一个选择，如果你想要你的域名为主域名的格式（example.com），看这里（<https://help.github.com/articles/tips-for-configuring-an-a-record-with-your-dns-provider>）。如果想要使用次级域名（www.example.com），看这里（<https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider>）。简单来说，不管我们上传什么文件到服务器，我们必须在根目录放置一个CNAME文本文件，里面只要注明我们想用的域名即可。下图是我的CNAME，怎么样，够简单吧。
 
-![godaddy]({{ BASE.PATH }}/images/jekyll_2.png)
+![godaddy]({{ BASE.PATH }}/images/jekyll/jekyll_2.png)
 
 之后我们需要设定域名的解析，也就是DNS了。这个步骤我们需要在Godaddy的网站完成。再次打开[Godaddy](http://www.godaddy.com)，右上登录。然后在如下位置选择`launch`：
 
-![godaddy]({{ BASE.PATH }}/images/jekyll_3.png)
+![godaddy]({{ BASE.PATH }}/images/jekyll/jekyll_3.png)
 
 然后猛戳自己的域名：
 
-![godaddy]({{ BASE.PATH }}/images/jekyll_4.png)
+![godaddy]({{ BASE.PATH }}/images/jekyll/jekyll_4.png)
 
 在之后的页面中选择`DNS Zone File`选项卡，然后在`A(Host)`下修改指向：
 
-![godaddy]({{ BASE.PATH }}/images/jekyll_5.png)
+![godaddy]({{ BASE.PATH }}/images/jekyll/jekyll_5.png)
 
 具体的IP可以就用这个，当然，以github提供的为主，最新的IP请在上方主域名设置方法的链接寻找。这里我要使用www的次级域名，所以不要忘了在CName (Alias)下修改www的指向：
 
-![godaddy]({{ BASE.PATH }}/images/jekyll_6.png)
+![godaddy]({{ BASE.PATH }}/images/jekyll/jekyll_6.png)
 
 最后不要忘记保存。大功告成！当然一般也不会立即生效，等几个小时再试试吧。连接成功后即使服务器上什么也没有也会有明显的区别，不会连接到Godaddy的广告了（这网站广告真多（╯‵□′）╯︵┴─┴ ）。
 
