@@ -784,5 +784,6 @@ button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-ap
 @media (max-device-width: 990px) {
   p{
     font-size: 25px;
+	margin:0 0 20px;
   }
 }
