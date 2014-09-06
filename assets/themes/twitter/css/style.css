@@ -2,7 +2,7 @@
 @media (max-device-width: 990px) {
   .content>p{
     font-size: 25px;
-	margin:20px 20px 20px;
+	margin:20px 0;
   }
 }
 
