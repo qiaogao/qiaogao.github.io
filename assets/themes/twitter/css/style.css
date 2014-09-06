@@ -1,5 +1,5 @@
 /* Custom container */
-@media (max-device-width: 768px) {
+@media (max-device-width: 767px) {
   .content>p{
     font-size: 25px;
 	margin:20px 0;
