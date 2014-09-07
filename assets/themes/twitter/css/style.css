@@ -11,6 +11,7 @@
   .content>h4{font-size: 35px;}
     
   .content>p>img{width: 100%;}
+  .content>p>code{font-size: 45px;}
 }
 
 .container-narrow {
