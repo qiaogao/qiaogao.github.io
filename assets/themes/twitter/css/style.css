@@ -12,7 +12,10 @@
     
   .content>p>img{width: 100%;}
   .content>p>code{font-size: 45px;}
-  .content>pre>code{font-size: 45px;}
+  .content>pre>code{
+	  font-size: 45px;
+	  line-height: 55px;
+  }
 }
 
 .container-narrow {
