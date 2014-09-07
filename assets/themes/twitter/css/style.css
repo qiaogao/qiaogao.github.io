@@ -13,7 +13,7 @@
   .content>h5{font-size: 30px;}
   .content>h6{font-size: 25px;}
   
-  .content>img{width: 100%;}
+  .content>p>img{width: 100%;}
 }
 
 .container-narrow {
