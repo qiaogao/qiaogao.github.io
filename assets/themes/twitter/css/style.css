@@ -1,8 +1,8 @@
 /* Custom container */
 @media (max-device-width: 700px) {
   .content>p{
-    font-size: 35px;
-	line-height: 120%;
+    font-size: 45px;
+	line-height: 55px;
   }
 }
 
