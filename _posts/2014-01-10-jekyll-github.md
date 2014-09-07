@@ -57,7 +57,11 @@ Jekyll: 这是一个开源的博客发布平台，通过这个平台，我们不
 ###4.Jekyll
 关于Jekyll，网络上的教程几乎是最全的。先看这里：（<https://help.github.com/articles/using-jekyll-with-pages>）。由于Github pages内置了jekyll解析，所以我们可以直接发布编写好的的模版代码，免去了发布上传的麻烦，同时jekyll还方便我们在本地提前预览网站的效果。Jekyll官网拥有最全的安装和使用文档（<http://jekyllrb.com/docs/home/>），老老实实的看完吧。
 
-关于本地安装jekyll，我想多说两句。由于它是基于linux开发的，所以要在windows下使用会非常麻烦。如果想强行在windows下使用，请看这里：<http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html>。感谢这位作者提供了所有jekyll所需的软件包。如果为了在win的CMD下使用，我们还需要设置环境变量：`SET PATH=%PATH%;C:\ruby\bin;C:\devkit\bin;C:\git\bin;C:\Python\App;C:\devkit\mingw\bin`。把这里的c盘改成软件包解压后所在的目录即可。
+关于本地安装jekyll，我想多说两句。由于它是基于linux开发的，所以要在windows下使用会非常麻烦。如果想强行在windows下使用，请看这里：<http://www.madhur.co.in/blog/2013/07/20/buildportablejekyll.html>。感谢这位作者提供了所有jekyll所需的软件包。如果为了在win的CMD下使用，我们还需要设置环境变量：
+
+	SET PATH=%PATH%;C:\ruby\bin;C:\devkit\bin;C:\git\bin;C:\Python\App;C:\devkit\mingw\bin
+	
+把这里的c盘改成软件包解压后所在的目录即可。
 
 当然，在linux下或者mac下使用终端还是最方便的办法，但是考虑到linux系统日常使用会带来诸多不便，因此有条件的技术党还是用mac吧，在撰写博客的时候有更多简洁清爽的软件可供选择。
 
