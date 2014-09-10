@@ -7,7 +7,7 @@
   .content>p>img{width: 100%;margin:0 0 40px;}
   .content code{font-size: 45px;line-height: 55px;margin:0 0 40px;}
   /**.content>pre>code{font-size: 45px;line-height: 55px;margin:0 0 40px;}**/
-  .content>ul>li{font-size: 45px;line-height: 55px;margin:0 0 40px;}
+  .content li{font-size: 45px;line-height: 55px;margin:0 0 40px;}
 }
 
 .container-narrow {
