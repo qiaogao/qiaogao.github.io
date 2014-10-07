@@ -83,14 +83,14 @@
 	function setLink()
 	{
 	    thisurl=document.URL;
-		if (thisurl.match(www.qiaogao.net))
+		if (thisurl.match("www.qiaogao.net"))
 		{
-			document.getElementById( "lang" ).href = str.replace(/www.qiaogao.net/,"cn.qiaogao.net");
+			document.getElementById( "lang" ).href = thisurl.replace(/www.qiaogao.net/,"cn.qiaogao.net");
 			document.getElementById( "lang" ).innerHTML = "中文版";
 		}
 		else
 		{
-			document.getElementById( "lang" ).href = str.replace(/cn.qiaogao.net/,"www.qiaogao.net");
+			document.getElementById( "lang" ).href = thisurl.replace(/cn.qiaogao.net/,"www.qiaogao.net");
 			document.getElementById( "lang" ).innerHTML = "English";
 		}
 	}
