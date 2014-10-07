@@ -170,6 +170,10 @@ body{
 .navbar .nav {
   float: left; }
 
+.navbar .changelang {
+  float: right; }  
+
+
 .header-title{padding:10px 20px 20px 20px;text-align:left;position:absolute;bottom:20px;left:0;display:table;max-width:500px;max-height:230px;min-height:100px;margin:0 0 0 0;overflow:hidden;background-color:#68217a}
 .header-title .header-title-wrap{display:table-cell;margin:0 0;text-align:left;vertical-align:middle;}
 .header-title h2{font-weight:200;margin:0 0;font-size:24px;font-size:1.5rem;color:#fff;}
