@@ -21,7 +21,7 @@
   float: left;  
 }
 
-.headbar-inner{min-height:80px;padding-left:20px;padding-right:20px;background-color:#1F2126;}
+.headbar-inner{min-height:80px;background-color:#1F2126;}
 
 .sidebar-right{
   margin: 0 0 0 10px;
@@ -38,7 +38,8 @@ footer{
   background-color: #4B525F;
   text-align:center;
   float:right;
-  width: 100%;
+  width:100%;
+  min-width: 960px;
 }
 
 footer > h6{
