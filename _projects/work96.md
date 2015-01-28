@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-01-21T00:00:05
 title: "Carry Ripple Adder Implementation using Data Driven Dynamic Logic"
 description: ""
 postphoto: "default"

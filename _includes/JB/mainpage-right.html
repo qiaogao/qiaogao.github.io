@@ -27,18 +27,18 @@
         </div>	 
 	   </div>
 	   <div class="contain-box">
-{% for post in site.posts %}
-	{% if post.group == 'works' %}
+{% for project in site.projects %}
+	{% if project.group == 'works' %}
         <div class="work-nav">
-		    <a href="{{ BASE_PATH }}{{ post.url }}">
+		    <a href="{{ BASE_PATH }}{{ project.url }}">
 			    <div class="work-imgbox">
 				    <div class="content">
-                    <h6>{{post.category}}</h6>
+                    <h6>{{project.category}}</h6>
 					</div>
 		        </div>
 			</a>
 			<div class="work-titletag">
-			    <h6><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h6>
+			    <h6><a href="{{ BASE_PATH }}{{ project.url }}">{{ project.title }}</a></h6>
 			</div>
 		</div>
     {% endif %}

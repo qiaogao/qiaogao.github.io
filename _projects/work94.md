@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-01-21T00:00:07
 title: "Design and test of a basic audio amplifier"
 description: ""
 postphoto: "default"

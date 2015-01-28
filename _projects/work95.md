@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-01-21T00:00:06
 title: "Optimization of a motion estimate algorithm for video coding"
 description: ""
 postphoto: "default"

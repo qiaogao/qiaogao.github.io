@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-01-20T00:00:00
 title: "Configurable processors: a new method for SoC design "
 description: ""
 postphoto: "default"

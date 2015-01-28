@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-04-24T00:00:09
 title: "FPGA Design and Implementation of Linear Scan Conversion and Rasterization"
 description: ""
 postphoto: "default"

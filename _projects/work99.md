@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-01-20T00:00:02
 title: "Bowling score keeper design "
 description: ""
 postphoto: "default"

@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2014-05-07T00:00:11
 title: "Presentation: An introduction of Internet of Things(IoT)"
 description: ""
 postphoto: "default"
