@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 date: 2014-05-07T00:00:10
 title: "DCT Implementation based on Algorithmic Strength Reduction and binDCT Algorithm"
 description: ""

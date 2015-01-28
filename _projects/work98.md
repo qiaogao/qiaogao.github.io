@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 date: 2014-01-20T00:00:03
 title: "Reciprocal, Division and Square Root Algorithms and Implementation"
 description: ""

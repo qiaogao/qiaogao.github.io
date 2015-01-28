@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 date: 2014-01-21T00:00:04
 title: "Design and Synthesis of Multi-Operand Adders"
 description: ""

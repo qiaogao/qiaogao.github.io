@@ -31,3 +31,20 @@ group: navigation
   {% endfor %}
 {% endfor %}
 {% assign group = nil %}
+
+{% for project in site.projects %}
+	{% if project.group == 'works' %}
+        <div class="work-nav">
+		    <a href="{{ BASE_PATH }}{{ project.url }}">
+			    <div class="work-imgbox">
+				    <div class="content">
+                    <h6>{{project.category}}</h6>
+					</div>
+		        </div>
+			</a>
+			<div class="work-titletag">
+			    <h6><a href="{{ BASE_PATH }}{{ project.url }}">{{ project.title }}</a></h6>
+			</div>
+		</div>
+    {% endif %}
+{% endfor %}
