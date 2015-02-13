@@ -1,20 +1,4 @@
-<!--<div class="radius_border">
-   <div class="content">
-     <div class="label-box">
-       <div class="contain-box">
-	       <p><strong>WELCOME</strong></p>
-       </div>	 
-	 </div>
-	 <div class="contain-box">
-        <h6>Greeting and welcome to my blog!</h6>
-		<h6>Here I will share my ideas without any hesitation and hope they could be helpful for you. So do not be hesitate to leave a comment under any post if it do make sense. Your small "Thank you" is a great support for me!</h6>
-        <h6>Please make yourself at home, enjoy yourself and have fun!</h6>
-		<h6>See you soon.</h6>
-	 </div>  
-   </div>
-  </div>-->
-<div>
-{% for post in site.posts %}
+<!--{% for post in site.posts %}
 	{% if post.group != 'works' %}
     <div class="radius_border">
         <div class="post-nav">
@@ -32,4 +16,41 @@
 	</div>
     {% endif %}
 {% endfor %}
+</div>-->
+<!-- This loops through the paginated posts -->
+<div>
+{% for post in paginator.posts %}
+    {% if post.group != 'works' %}
+    <div class="radius_border">
+        <div class="post-nav">
+            <a href="{{ BASE_PATH }}{{ post.url }}">
+                <div class="post-imgbox">
+                    <img src="{{ BASE_PATH }}/images/{{post.postphoto}}.jpg">
+                    <div class="category-tag"><p>{{post.category}}</p></div>
+                </div>
+            </a>
+            <div class="post-titletag">
+                <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
+                <p>Posted on {{ post.date | date_to_string }}</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
+<!-- Pagination links -->
+<div class="pagination">
+    <ul>
+    {% if paginator.previous_page %}
+        <li class="prev"><a href="{{ paginator.previous_page_path }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+    {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+    {% endif %}
+        <li><a>Page: {{ paginator.page }} / {{ paginator.total_pages }}</a></li>
+    {% if paginator.next_page %}
+        <li class="next"><a href="{{ paginator.next_page_path }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+    {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+    {% endif %}
+    </ul>
 </div>
